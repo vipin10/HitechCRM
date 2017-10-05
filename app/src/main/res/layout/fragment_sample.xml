@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/actionbarsize"
+        android:background="@drawable/listborder"
+        android:orientation="vertical">
+
+        <!--<android.support.v7.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="12dp"
+            android:id="@+id/view2"
+            app:cardCornerRadius="40dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:id="@+id/iv1"
+            android:scaleType="fitCenter"
+            android:background="@color/editTextBackground"
+            android:src="@drawable/ss" />
+        </android.support.v7.widget.CardView>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv1"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/usseric"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+
+        <devs.mulham.horizontalcalendar.HorizontalCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bababd"
+            app:textColorNormal="#ffffff"
+            app:textColorSelected="#000"
+            app:selectedDateBackground="#000"
+            app:selectorColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:background="@color/textColorPrimary"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/li11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBar"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/leadstext"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".50"
+                android:background="@drawable/greyborder"
+                android:gravity="center"
+                android:textColor="@color/editTextBackground"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/contacttext"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".50"
+                android:background="@drawable/color1"
+                android:gravity="center"
+                android:text="10\nContacts"
+                android:textColor="@color/editTextBackground"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/li22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/li11"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/accounttext"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".50"
+                android:background="@drawable/color1"
+                android:gravity="center"
+                android:text="30\nAccounts"
+                android:textColor="@color/editTextBackground"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/callstext"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".50"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:text="10\nCalls"
+                android:textColor="@color/editTextBackground"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/li33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/li22"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mailstext"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".50"
+                android:background="@drawable/border3"
+                android:gravity="center"
+                android:text="30\nMails"
+                android:textColor="@color/editTextBackground"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/companytext"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".50"
+                android:background="@drawable/greyborder"
+                android:gravity="center"
+                android:text="10\nCompany"
+                android:textColor="@color/editTextBackground"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/li44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/li33"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/canditext"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/purpleborder"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="21\nCandidates Attached"
+                android:textColor="@color/editTextBackground"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

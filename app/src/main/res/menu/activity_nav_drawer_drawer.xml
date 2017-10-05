@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeicon"
+            android:title="Home" />
+</group>
+
+        <item android:title="Sales">
+            <menu>
+        <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_lead"
+            android:icon="@drawable/leadicon"
+            android:title="Leads" />
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/contacticon"
+            android:title="Task" />
+        <item
+            android:id="@+id/nav_company"
+            android:icon="@drawable/companyicon"
+            android:title="Company" />
+        </group>
+            </menu>
+        </item>
+           <!-- <group android:checkableBehavior="single">
+    </group>
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/leadicon"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/leadicon"
+                android:title="Send" />
+        </menu>-->
+
+
+</menu>
